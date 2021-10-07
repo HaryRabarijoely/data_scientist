@@ -2,6 +2,18 @@ journalists = ["@jcunniet","@PaulLampon","@Aziliz31","@ssoumier","@marionsouzeau
 
 def number_total_handle 
     puts "Combien y a t-il de handle dans cette array ?"
-    print ">" journalists.length
+    puts journalists.length
 end
 
+def handle_plus_court
+    puts "Quel est le handle le plus court de cette list ?"
+    puts journalists.min {|a, b| a.length <=> b.length}
+end
+
+def majuscule_number
+    puts "Combien commence par un majuscule"
+    journalists_J = [journalist.select {|i| i[1] == i[1].capitalize}]
+    
+
+
+    
